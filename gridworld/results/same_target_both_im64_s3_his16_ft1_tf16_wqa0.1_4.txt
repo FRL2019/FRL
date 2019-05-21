@@ -1,0 +1,227 @@
+
+ Arguments:
+autofilter: 1
+autolen: 1
+automax: 2
+batch_size: 32
+collision_reward: -10.0
+epochs: 200
+exploration_decay_steps: 1000
+exploration_rate_end: 0.1
+exploration_rate_start: 1
+exploration_rate_test: 0.0
+gamma: 0.9
+gpu_fraction: 0.1
+hist_len: 16
+image_dim: 64
+image_padding: 1
+learning_rate: 0.001
+load_weights: False
+max_steps: 2
+max_train_doms: 6400
+num_actions: 16
+positive_rate: 0.9
+predict_net: both
+priority: 1
+replay_size: 100000
+result_dir: results/same_target_both_im64_s3_his16_ft1_tf16_wqa0.1_4.txt
+reward_bound: 0.0
+save_weights: True
+start_epoch: 0
+start_test_dom: 7200
+start_valid_dom: 6400
+state_dim: 3
+step_reward: -1.0
+stop_epoch_gap: 10
+success_base: -1
+target_steps: 5
+terminal_reward: 50.0
+test_episodes: 800
+train_episodes: 100
+train_frequency: 16
+train_mode: same_target
+use_instant_distance: 1
+valid_episodes: 800
+weight_q_a: 0.1
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 0	 avg_reward: 32.08	 avg_steps: 59.83	 step_diff: 2.26
+episodes: 800	 success_rate: {1: 0.24875, 10: 0.565, 3: 0.41, 5: 0.4825, -1: 0.6}
+
+[both] 	 best_epoch: 0	 best_success: {1: 0.24875, 10: 0.565, 3: 0.41, 5: 0.4825, -1: 0.6}	 avg_reward: 32.0783839378	 step_diff: 2.26044504995
+
+
+
+ test both net ...
+-----both-----
+
+ epochs: 0	 avg_reward: 50.90	 avg_steps: 62.52	 step_diff: 2.39
+episodes: 800	 success_rate: {1: 0.24875, 10: 0.52875, 3: 0.37125, 5: 0.455, -1: 0.56875}
+
+
+ Test results:	 success_rate: {1: 0.24875, 10: 0.52875, 3: 0.37125, 5: 0.455, -1: 0.56875}	 avg_reward: 50.9000197467	 step_diff: 2.39058402861
+
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 1	 avg_reward: 34.79	 avg_steps: 18.47	 step_diff: 0.08
+episodes: 800	 success_rate: {1: 0.24375, 10: 0.2875, 3: 0.275, 5: 0.28, -1: 0.2875}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 2	 avg_reward: -219.08	 avg_steps: 34.41	 step_diff: 0.81
+episodes: 800	 success_rate: {1: 0.405, 10: 0.52875, 3: 0.48125, 5: 0.505, -1: 0.54375}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 3	 avg_reward: -44.09	 avg_steps: 44.20	 step_diff: 1.42
+episodes: 800	 success_rate: {1: 0.315, 10: 0.51125, 3: 0.39875, 5: 0.465, -1: 0.5275}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 4	 avg_reward: -309.27	 avg_steps: 23.58	 step_diff: 0.16
+episodes: 800	 success_rate: {1: 0.4425, 10: 0.49375, 3: 0.49, 5: 0.49375, -1: 0.495}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 5	 avg_reward: -33.74	 avg_steps: 35.21	 step_diff: 0.84
+episodes: 800	 success_rate: {1: 0.27875, 10: 0.4725, 3: 0.425, 5: 0.45375, -1: 0.4725}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 6	 avg_reward: 19.63	 avg_steps: 41.71	 step_diff: 1.23
+episodes: 800	 success_rate: {1: 0.3625, 10: 0.6975, 3: 0.58625, 5: 0.66875, -1: 0.71625}
+
+[both] 	 best_epoch: 6	 best_success: {1: 0.3625, 10: 0.6975, 3: 0.58625, 5: 0.66875, -1: 0.71625}	 avg_reward: 19.6310884044	 step_diff: 1.23211283392
+
+
+
+ test both net ...
+-----both-----
+
+ epochs: 6	 avg_reward: 20.97	 avg_steps: 40.18	 step_diff: 1.11
+episodes: 800	 success_rate: {1: 0.3725, 10: 0.70875, 3: 0.61625, 5: 0.68125, -1: 0.71625}
+
+
+ Test results:	 success_rate: {1: 0.3725, 10: 0.70875, 3: 0.61625, 5: 0.68125, -1: 0.71625}	 avg_reward: 20.9720683483	 step_diff: 1.10612020858
+
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 7	 avg_reward: -210.99	 avg_steps: 25.64	 step_diff: 0.28
+episodes: 800	 success_rate: {1: 0.38, 10: 0.44875, 3: 0.445, 5: 0.4475, -1: 0.45}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 8	 avg_reward: -23.98	 avg_steps: 49.28	 step_diff: 1.68
+episodes: 800	 success_rate: {1: 0.22125, 10: 0.4775, 3: 0.36625, 5: 0.425, -1: 0.505}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 9	 avg_reward: -122.69	 avg_steps: 52.78	 step_diff: 1.70
+episodes: 800	 success_rate: {1: 0.3775, 10: 0.66625, 3: 0.5225, 5: 0.59375, -1: 0.695}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 10	 avg_reward: 22.48	 avg_steps: 49.72	 step_diff: 1.67
+episodes: 800	 success_rate: {1: 0.3675, 10: 0.56375, 3: 0.4625, 5: 0.51, -1: 0.60125}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 11	 avg_reward: -68.80	 avg_steps: 24.74	 step_diff: 0.30
+episodes: 800	 success_rate: {1: 0.4575, 10: 0.56, 3: 0.545, 5: 0.55375, -1: 0.56125}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 12	 avg_reward: -190.78	 avg_steps: 20.35	 step_diff: 0.01
+episodes: 800	 success_rate: {1: 0.45875, 10: 0.49375, 3: 0.49125, 5: 0.4925, -1: 0.49375}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 13	 avg_reward: 4.69	 avg_steps: 22.90	 step_diff: 0.27
+episodes: 800	 success_rate: {1: 0.37875, 10: 0.44625, 3: 0.42625, 5: 0.435, -1: 0.45375}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 14	 avg_reward: -145.59	 avg_steps: 26.49	 step_diff: 0.32
+episodes: 800	 success_rate: {1: 0.42125, 10: 0.475, 3: 0.4625, 5: 0.4725, -1: 0.48}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 15	 avg_reward: -30.09	 avg_steps: 49.91	 step_diff: 1.53
+episodes: 800	 success_rate: {1: 0.42375, 10: 0.5775, 3: 0.5075, 5: 0.5375, -1: 0.6325}
+
+
+
+ valid both net ...
+-----both-----
+
+ epochs: 16	 avg_reward: 51.28	 avg_steps: 25.47	 step_diff: 0.44
+episodes: 800	 success_rate: {1: 0.31375, 10: 0.4, 3: 0.3675, 5: 0.39, -1: 0.41125}
+
+
+
+ Best results:
+	test
+		both
+			avg_reward: 20.9720683483
+			log_epoch: 6
+			success_rate: {1: 0.3725, 10: 0.70875, 3: 0.61625, 5: 0.68125, -1: 0.71625}
+			step_diff: 1.10612020858
+	valid
+		both
+			avg_reward: 19.6310884044
+			log_epoch: 6
+			success_rate: {1: 0.3625, 10: 0.6975, 3: 0.58625, 5: 0.66875, -1: 0.71625}
+			step_diff: 1.23211283392
+
+Total time cost: 3197s

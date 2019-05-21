@@ -1,0 +1,627 @@
+
+ Arguments:
+batch_size: 32
+epochs: 1000
+exploration_decay_steps: 1000
+exploration_rate_end: 0.1
+exploration_rate_start: 1
+exploration_rate_test: 0.0
+gamma: 0.9
+gpu_fraction: 0.2
+hist_len: 16
+image_dim: 32
+learning_rate: 0.001
+load_weights: False
+max_steps: 256
+max_train_doms: 7000
+num_actions: 16
+positive_rate: 0.9
+predict_net: full
+priority: 1
+replay_size: 100000
+result_dir: results/same_target_full_im32_s3_his16_ep1k_test100_meets.txt
+reward_bound: 0.0
+save_weights: True
+start_epoch: 0
+start_test_dom: 7000
+state_dim: 3
+stop_epoch_gap: 10
+target_steps: 5
+test_episodes: 100
+train_episodes: 100
+train_mode: same_target
+train_steps: 1000000
+
+-----alpha-----
+epochs: 0	 avg_reward: -1349.29667264
+episodes: 100	 success: 42.0	 success_rate: 0.42
+
+[alpha] 	 best_epoch: 0	 best_success: 0.42	 avg_reward: -1349.29667264
+
+-----beta-----
+epochs: 0	 avg_reward: -1022.99922073
+episodes: 100	 success: 47.0	 success_rate: 0.47
+
+[beta] 	 best_epoch: 0	 best_success: 0.47	 avg_reward: -1022.99922073
+
+-----both-----
+epochs: 0	 avg_reward: -358.060427378
+episodes: 100	 success: 72.0	 success_rate: 0.72
+
+[both] 	 best_epoch: 0	 best_success: 0.72	 avg_reward: -358.060427378
+
+
+-----alpha-----
+epochs: 1	 avg_reward: -1012.31045976
+episodes: 100	 success: 59.0	 success_rate: 0.59
+
+[alpha] 	 best_epoch: 1	 best_success: 0.59	 avg_reward: -1012.31045976
+
+-----beta-----
+epochs: 1	 avg_reward: -929.184553289
+episodes: 100	 success: 57.0	 success_rate: 0.57
+
+[beta] 	 best_epoch: 1	 best_success: 0.57	 avg_reward: -929.184553289
+
+-----both-----
+epochs: 1	 avg_reward: -322.79556655
+episodes: 100	 success: 66.0	 success_rate: 0.66
+
+
+-----alpha-----
+epochs: 2	 avg_reward: -602.173104313
+episodes: 100	 success: 56.0	 success_rate: 0.56
+
+-----beta-----
+epochs: 2	 avg_reward: -721.764317175
+episodes: 100	 success: 56.0	 success_rate: 0.56
+
+-----both-----
+epochs: 2	 avg_reward: -139.014193692
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+
+-----alpha-----
+epochs: 3	 avg_reward: -561.390267999
+episodes: 100	 success: 66.0	 success_rate: 0.66
+
+[alpha] 	 best_epoch: 3	 best_success: 0.66	 avg_reward: -561.390267999
+
+-----beta-----
+epochs: 3	 avg_reward: -649.579832655
+episodes: 100	 success: 56.0	 success_rate: 0.56
+
+-----both-----
+epochs: 3	 avg_reward: -105.026075067
+episodes: 100	 success: 73.0	 success_rate: 0.73
+
+[both] 	 best_epoch: 3	 best_success: 0.73	 avg_reward: -105.026075067
+
+
+-----alpha-----
+epochs: 4	 avg_reward: -707.165247047
+episodes: 100	 success: 64.0	 success_rate: 0.64
+
+-----beta-----
+epochs: 4	 avg_reward: -748.906279972
+episodes: 100	 success: 49.0	 success_rate: 0.49
+
+-----both-----
+epochs: 4	 avg_reward: -107.614937239
+episodes: 100	 success: 69.0	 success_rate: 0.69
+
+
+-----alpha-----
+epochs: 5	 avg_reward: -193.320003962
+episodes: 100	 success: 82.0	 success_rate: 0.82
+
+[alpha] 	 best_epoch: 5	 best_success: 0.82	 avg_reward: -193.320003962
+
+-----beta-----
+epochs: 5	 avg_reward: -346.732025603
+episodes: 100	 success: 80.0	 success_rate: 0.8
+
+[beta] 	 best_epoch: 5	 best_success: 0.8	 avg_reward: -346.732025603
+
+-----both-----
+epochs: 5	 avg_reward: -188.571317889
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+
+-----alpha-----
+epochs: 6	 avg_reward: -1083.2670594
+episodes: 100	 success: 48.0	 success_rate: 0.48
+
+-----beta-----
+epochs: 6	 avg_reward: -388.087607817
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----both-----
+epochs: 6	 avg_reward: -93.0311332838
+episodes: 100	 success: 74.0	 success_rate: 0.74
+
+[both] 	 best_epoch: 6	 best_success: 0.74	 avg_reward: -93.0311332838
+
+
+-----alpha-----
+epochs: 7	 avg_reward: -577.594399153
+episodes: 100	 success: 59.0	 success_rate: 0.59
+
+-----beta-----
+epochs: 7	 avg_reward: -296.576563615
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+-----both-----
+epochs: 7	 avg_reward: -61.4978918357
+episodes: 100	 success: 73.0	 success_rate: 0.73
+
+
+-----alpha-----
+epochs: 8	 avg_reward: -401.521718343
+episodes: 100	 success: 58.0	 success_rate: 0.58
+
+-----beta-----
+epochs: 8	 avg_reward: -464.354155099
+episodes: 100	 success: 77.0	 success_rate: 0.77
+
+-----both-----
+epochs: 8	 avg_reward: -183.578846049
+episodes: 100	 success: 70.0	 success_rate: 0.7
+
+
+-----alpha-----
+epochs: 9	 avg_reward: -563.838797758
+episodes: 100	 success: 69.0	 success_rate: 0.69
+
+-----beta-----
+epochs: 9	 avg_reward: -531.168806065
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----both-----
+epochs: 9	 avg_reward: -124.913054445
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+[both] 	 best_epoch: 9	 best_success: 0.75	 avg_reward: -124.913054445
+
+
+-----alpha-----
+epochs: 10	 avg_reward: -684.418733293
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+-----beta-----
+epochs: 10	 avg_reward: -288.043391802
+episodes: 100	 success: 76.0	 success_rate: 0.76
+
+-----both-----
+epochs: 10	 avg_reward: -257.849896651
+episodes: 100	 success: 55.0	 success_rate: 0.55
+
+
+-----alpha-----
+epochs: 11	 avg_reward: -521.649835455
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----beta-----
+epochs: 11	 avg_reward: -568.590584361
+episodes: 100	 success: 51.0	 success_rate: 0.51
+
+-----both-----
+epochs: 11	 avg_reward: -150.207348064
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+
+-----alpha-----
+epochs: 12	 avg_reward: -328.382285709
+episodes: 100	 success: 72.0	 success_rate: 0.72
+
+-----beta-----
+epochs: 12	 avg_reward: -365.946576497
+episodes: 100	 success: 70.0	 success_rate: 0.7
+
+-----both-----
+epochs: 12	 avg_reward: -333.945389753
+episodes: 100	 success: 52.0	 success_rate: 0.52
+
+
+-----alpha-----
+epochs: 13	 avg_reward: -951.096042474
+episodes: 100	 success: 42.0	 success_rate: 0.42
+
+-----beta-----
+epochs: 13	 avg_reward: -541.199565744
+episodes: 100	 success: 57.0	 success_rate: 0.57
+
+-----both-----
+epochs: 13	 avg_reward: -56.403669288
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+
+-----alpha-----
+epochs: 14	 avg_reward: -407.529964014
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+-----beta-----
+epochs: 14	 avg_reward: -543.117374539
+episodes: 100	 success: 55.0	 success_rate: 0.55
+
+-----both-----
+epochs: 14	 avg_reward: -278.435150925
+episodes: 100	 success: 56.0	 success_rate: 0.56
+
+
+-----alpha-----
+epochs: 15	 avg_reward: -639.389473921
+episodes: 100	 success: 52.0	 success_rate: 0.52
+
+-----beta-----
+epochs: 15	 avg_reward: -463.398204347
+episodes: 100	 success: 59.0	 success_rate: 0.59
+
+-----both-----
+epochs: 15	 avg_reward: -344.912664988
+episodes: 100	 success: 45.0	 success_rate: 0.45
+
+
+-----alpha-----
+epochs: 16	 avg_reward: -600.676514028
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----beta-----
+epochs: 16	 avg_reward: -429.372564966
+episodes: 100	 success: 62.0	 success_rate: 0.62
+
+-----both-----
+epochs: 16	 avg_reward: -88.211627856
+episodes: 100	 success: 70.0	 success_rate: 0.7
+
+
+-----alpha-----
+epochs: 17	 avg_reward: -471.16151509
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+-----beta-----
+epochs: 17	 avg_reward: -744.504009735
+episodes: 100	 success: 48.0	 success_rate: 0.48
+
+-----both-----
+epochs: 17	 avg_reward: -198.794083545
+episodes: 100	 success: 65.0	 success_rate: 0.65
+
+
+-----alpha-----
+epochs: 18	 avg_reward: -585.896139164
+episodes: 100	 success: 77.0	 success_rate: 0.77
+
+-----beta-----
+epochs: 18	 avg_reward: -291.195375286
+episodes: 100	 success: 79.0	 success_rate: 0.79
+
+-----both-----
+epochs: 18	 avg_reward: -85.4914671563
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+[both] 	 best_epoch: 18	 best_success: 0.78	 avg_reward: -85.4914671563
+
+
+-----alpha-----
+epochs: 19	 avg_reward: -386.669992275
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----beta-----
+epochs: 19	 avg_reward: -338.956755968
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+-----both-----
+epochs: 19	 avg_reward: -112.681204743
+episodes: 100	 success: 81.0	 success_rate: 0.81
+
+[both] 	 best_epoch: 19	 best_success: 0.81	 avg_reward: -112.681204743
+
+
+-----alpha-----
+epochs: 20	 avg_reward: -597.231588834
+episodes: 100	 success: 53.0	 success_rate: 0.53
+
+-----beta-----
+epochs: 20	 avg_reward: -622.328331021
+episodes: 100	 success: 58.0	 success_rate: 0.58
+
+-----both-----
+epochs: 20	 avg_reward: -76.7243245392
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+
+-----alpha-----
+epochs: 21	 avg_reward: -588.92399619
+episodes: 100	 success: 50.0	 success_rate: 0.5
+
+-----beta-----
+epochs: 21	 avg_reward: -410.787560646
+episodes: 100	 success: 73.0	 success_rate: 0.73
+
+-----both-----
+epochs: 21	 avg_reward: -180.182828819
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+
+-----alpha-----
+epochs: 22	 avg_reward: -305.041490841
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----beta-----
+epochs: 22	 avg_reward: -331.024704965
+episodes: 100	 success: 72.0	 success_rate: 0.72
+
+-----both-----
+epochs: 22	 avg_reward: -80.1403801441
+episodes: 100	 success: 86.0	 success_rate: 0.86
+
+[both] 	 best_epoch: 22	 best_success: 0.86	 avg_reward: -80.1403801441
+
+
+-----alpha-----
+epochs: 23	 avg_reward: -446.36747353
+episodes: 100	 success: 62.0	 success_rate: 0.62
+
+-----beta-----
+epochs: 23	 avg_reward: -668.251072087
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----both-----
+epochs: 23	 avg_reward: -205.075639433
+episodes: 100	 success: 58.0	 success_rate: 0.58
+
+
+-----alpha-----
+epochs: 24	 avg_reward: -396.577574202
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+-----beta-----
+epochs: 24	 avg_reward: -549.221185089
+episodes: 100	 success: 64.0	 success_rate: 0.64
+
+-----both-----
+epochs: 24	 avg_reward: -155.519451097
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+
+-----alpha-----
+epochs: 25	 avg_reward: -403.595060101
+episodes: 100	 success: 76.0	 success_rate: 0.76
+
+-----beta-----
+epochs: 25	 avg_reward: -269.019642928
+episodes: 100	 success: 65.0	 success_rate: 0.65
+
+-----both-----
+epochs: 25	 avg_reward: -212.273495607
+episodes: 100	 success: 66.0	 success_rate: 0.66
+
+
+-----alpha-----
+epochs: 26	 avg_reward: -816.866147575
+episodes: 100	 success: 39.0	 success_rate: 0.39
+
+-----beta-----
+epochs: 26	 avg_reward: -489.048811884
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----both-----
+epochs: 26	 avg_reward: -253.162280608
+episodes: 100	 success: 53.0	 success_rate: 0.53
+
+
+-----alpha-----
+epochs: 27	 avg_reward: -646.305683
+episodes: 100	 success: 62.0	 success_rate: 0.62
+
+-----beta-----
+epochs: 27	 avg_reward: -433.597486492
+episodes: 100	 success: 68.0	 success_rate: 0.68
+
+-----both-----
+epochs: 27	 avg_reward: -105.320506711
+episodes: 100	 success: 73.0	 success_rate: 0.73
+
+
+-----alpha-----
+epochs: 28	 avg_reward: -1084.30219768
+episodes: 100	 success: 40.0	 success_rate: 0.4
+
+-----beta-----
+epochs: 28	 avg_reward: -477.334969756
+episodes: 100	 success: 59.0	 success_rate: 0.59
+
+-----both-----
+epochs: 28	 avg_reward: -380.542648314
+episodes: 100	 success: 47.0	 success_rate: 0.47
+
+
+-----alpha-----
+epochs: 29	 avg_reward: -913.073664898
+episodes: 100	 success: 44.0	 success_rate: 0.44
+
+-----beta-----
+epochs: 29	 avg_reward: -639.955254911
+episodes: 100	 success: 62.0	 success_rate: 0.62
+
+-----both-----
+epochs: 29	 avg_reward: -281.001722643
+episodes: 100	 success: 60.0	 success_rate: 0.6
+
+
+-----alpha-----
+epochs: 30	 avg_reward: -746.923791486
+episodes: 100	 success: 47.0	 success_rate: 0.47
+
+-----beta-----
+epochs: 30	 avg_reward: -560.344682071
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----both-----
+epochs: 30	 avg_reward: -291.979342249
+episodes: 100	 success: 58.0	 success_rate: 0.58
+
+
+-----alpha-----
+epochs: 31	 avg_reward: -753.944193768
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----beta-----
+epochs: 31	 avg_reward: -491.650038695
+episodes: 100	 success: 68.0	 success_rate: 0.68
+
+-----both-----
+epochs: 31	 avg_reward: -177.877543499
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+
+-----alpha-----
+epochs: 32	 avg_reward: -739.524061078
+episodes: 100	 success: 57.0	 success_rate: 0.57
+
+-----beta-----
+epochs: 32	 avg_reward: -547.315593454
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+-----both-----
+epochs: 32	 avg_reward: -238.734027178
+episodes: 100	 success: 76.0	 success_rate: 0.76
+
+
+-----alpha-----
+epochs: 33	 avg_reward: -354.809236461
+episodes: 100	 success: 64.0	 success_rate: 0.64
+
+-----beta-----
+epochs: 33	 avg_reward: -614.265892154
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----both-----
+epochs: 33	 avg_reward: -230.4876556
+episodes: 100	 success: 61.0	 success_rate: 0.61
+
+
+-----alpha-----
+epochs: 34	 avg_reward: -579.013442405
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+-----beta-----
+epochs: 34	 avg_reward: -702.057937256
+episodes: 100	 success: 70.0	 success_rate: 0.7
+
+-----both-----
+epochs: 34	 avg_reward: -147.116793992
+episodes: 100	 success: 78.0	 success_rate: 0.78
+
+
+-----alpha-----
+epochs: 35	 avg_reward: -489.337149994
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+-----beta-----
+epochs: 35	 avg_reward: -739.512174555
+episodes: 100	 success: 71.0	 success_rate: 0.71
+
+-----both-----
+epochs: 35	 avg_reward: -218.77281237
+episodes: 100	 success: 76.0	 success_rate: 0.76
+
+
+-----alpha-----
+epochs: 36	 avg_reward: -956.669202584
+episodes: 100	 success: 52.0	 success_rate: 0.52
+
+-----beta-----
+epochs: 36	 avg_reward: -627.831517871
+episodes: 100	 success: 66.0	 success_rate: 0.66
+
+-----both-----
+epochs: 36	 avg_reward: -379.944145372
+episodes: 100	 success: 43.0	 success_rate: 0.43
+
+
+-----alpha-----
+epochs: 37	 avg_reward: -602.851610676
+episodes: 100	 success: 59.0	 success_rate: 0.59
+
+-----beta-----
+epochs: 37	 avg_reward: -1038.07942987
+episodes: 100	 success: 49.0	 success_rate: 0.49
+
+-----both-----
+epochs: 37	 avg_reward: -333.813425771
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+
+-----alpha-----
+epochs: 38	 avg_reward: -739.467696811
+episodes: 100	 success: 48.0	 success_rate: 0.48
+
+-----beta-----
+epochs: 38	 avg_reward: -482.224117369
+episodes: 100	 success: 75.0	 success_rate: 0.75
+
+-----both-----
+epochs: 38	 avg_reward: -318.523310718
+episodes: 100	 success: 58.0	 success_rate: 0.58
+
+
+-----alpha-----
+epochs: 39	 avg_reward: -210.721430899
+episodes: 100	 success: 67.0	 success_rate: 0.67
+
+-----beta-----
+epochs: 39	 avg_reward: -616.09967394
+episodes: 100	 success: 76.0	 success_rate: 0.76
+
+-----both-----
+epochs: 39	 avg_reward: -315.45716432
+episodes: 100	 success: 57.0	 success_rate: 0.57
+
+
+-----alpha-----
+epochs: 40	 avg_reward: -664.729720202
+episodes: 100	 success: 69.0	 success_rate: 0.69
+
+-----beta-----
+epochs: 40	 avg_reward: -981.412661059
+episodes: 100	 success: 37.0	 success_rate: 0.37
+
+-----both-----
+epochs: 40	 avg_reward: -390.105634129
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+
+-----alpha-----
+epochs: 41	 avg_reward: -1076.36330129
+episodes: 100	 success: 49.0	 success_rate: 0.49
+
+-----beta-----
+epochs: 41	 avg_reward: -1054.05419219
+episodes: 100	 success: 38.0	 success_rate: 0.38
+
+-----both-----
+epochs: 41	 avg_reward: -351.04450061
+episodes: 100	 success: 63.0	 success_rate: 0.63
+
+
+-----alpha-----
+epochs: 42	 avg_reward: -1049.99941464
+episodes: 100	 success: 41.0	 success_rate: 0.41
+
+-----beta-----
+epochs: 42	 avg_reward: -493.540558433
+episodes: 100	 success: 61.0	 success_rate: 0.61
+
+-----both-----
+epochs: 42	 avg_reward: -741.950926387
+episodes: 100	 success: 35.0	 success_rate: 0.35
+
+
+
+
+ Best results:
+alpha: {'avg_reward': -193.32000396181368, 'log_epoch': 5, 'success_rate': 0.82}
+beta: {'avg_reward': -346.7320256029065, 'log_epoch': 5, 'success_rate': 0.8}
+both: {'avg_reward': -80.140380144119888, 'log_epoch': 22, 'success_rate': 0.86}

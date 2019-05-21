@@ -1,0 +1,65 @@
+
+ Arguments:
+batch_size: 32
+epochs: 20
+exploration_decay_steps: 1000
+exploration_rate_end: 0.1
+exploration_rate_start: 1
+exploration_rate_test: 0.0
+gamma: 0.9
+gpu_fraction: 0.2
+hist_len: 32
+image_dim: 32
+learning_rate: 0.001
+load_weights: False
+max_steps: 256
+max_train_doms: 6400
+num_actions: 16
+positive_rate: 0.9
+predict_net: alpha
+priority: 1
+replay_size: 100000
+result_dir: results/single_alpha_im32_s3_his32_ep20_stop10.txt
+reward_bound: 0.0
+save_weights: True
+start_epoch: 0
+start_test_dom: 7200
+start_valid_dom: 6400
+state_dim: 3
+stop_epoch_gap: 10
+target_steps: 5
+test_episodes: 800
+train_episodes: 500
+train_mode: single
+valid_episodes: 800
+
+-----alpha-----
+
+ epochs: 0	 avg_reward: -3038.801045	 step_diff: 3.517241episodes: 800	 success: 232.0	 success_rate: 0.29
+
+best_epoch: 0	 best_success: 0.29	 avg_reward: -3038.80104482	 step_diff: 3.51724137931
+
+-----alpha-----
+
+ epochs: 0	 avg_reward: -2900.092368	 step_diff: 2.854281episodes: 800	 success: 251.0	 success_rate: 0.31375
+
+
+ Test results:
+ success_rate: 0.31375	 avg_reward: -2900.09236841	 step_diff: 2.85428051002
+-----alpha-----
+
+ epochs: 1	 avg_reward: -3038.801045	 step_diff: 3.517241episodes: 800	 success: 232.0	 success_rate: 0.29
+
+
+
+ Best results:
+	test
+		avg_reward: -2900.09236841
+		log_epoch: 0
+		success_rate: 0.31375
+		step_diff: 2.85428051002
+	valid
+		avg_reward: -3038.80104482
+		log_epoch: 0
+		success_rate: 0.29
+		step_diff: 3.51724137931

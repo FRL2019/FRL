@@ -1,0 +1,883 @@
+
+ Arguments:
+action_rate: 0.05
+add_predict_noise: True
+add_train_noise: True
+agent_mode: arg
+autodim: True
+batch_size: 32
+data_name: data/wikihow_labeled_text_data.pkl
+decay_rate: 0.88
+dis_dim: 50
+display_epoch_result: False
+domain: wikihow
+end_fold: 5
+epochs: 20
+epsilon: 1e-06
+exploration_decay_steps: 1000
+exploration_rate_end: 0.1
+exploration_rate_start: 1
+exploration_rate_test: 0.0
+filter_act_idx: True
+fold_id: 1
+gamma: 0.9
+gpu_fraction: 0.2
+k_fold: 5
+k_fold_indices: data/indices/wikihow_eas_5_fold_indices.pkl
+lambda_: 0.5
+learning_rate: 0.001
+load_weights: False
+model_dim: 50
+momentum: 0.8
+multi_channels: 0
+noise_prob: 0.5
+num_actions: 2
+num_filters: 32
+num_pos: 37
+num_words: 100
+object_rate: 0.04
+optimizer: adam
+pos_dim: 50
+positive_rate: 0.9
+predict_net: both
+preset_lambda: False
+priority: True
+random_play: False
+replay_size: 50000
+result_dir: results/wikihow_arg_frl_separate_both__anTrue_pnTrue_1
+reward_assign: [1, 2, 3]
+reward_base: 50.0
+save_weights: False
+start_epoch: 0
+start_fold: 0
+stddev: 1.0
+stop_epoch_gap: 5
+tag_dim: 50
+target_steps: 5
+train_episodes: 500
+train_frequency: 1
+train_mode: frl_separate
+train_repeat: 1
+train_steps: 461700
+use_act_att: False
+use_act_rate: True
+valid_episodes: 30
+valid_steps: 3000
+word2vec: <gensim.models.keyedvectors.Word2VecKeyedVectors object at 0x7fd923cfcc90>
+word_dim: 50
+
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 27	 tagged_rqs: 29
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 4
+total_act: 38	 right_act: 27	 tagged_act: 33
+acc: 0.982716	 rec: 0.710526	 pre: 0.818182	 f1: 0.760563
+pre: [0.9310344827586207, 0.0, 0.0, 0.8181818181818182]
+rec: [0.7714285714285715, 0.0, 0.0, 0.7105263157894737]
+f1: [0.8437500000000001, 0.0, 0.0, 0.7605633802816901]
+
+cumulative reward: 40119.275000	 average reward: 49.529969
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 29	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 29	 tagged_act: 39
+acc: 0.980247	 rec: 0.763158	 pre: 0.743590	 f1: 0.753247
+pre: [0.8529411764705882, 0.0, 0.0, 0.7435897435897436]
+rec: [0.8285714285714286, 0.0, 0.0, 0.7631578947368421]
+f1: [0.8405797101449276, 0.0, 0.0, 0.7532467532467534]
+
+cumulative reward: 40321.500000	 average reward: 49.779630
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 25	 tagged_rqs: 26
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 4
+total_act: 38	 right_act: 25	 tagged_act: 30
+acc: 0.981481	 rec: 0.657895	 pre: 0.833333	 f1: 0.735294
+pre: [0.9615384615384616, 0.0, 0.0, 0.8333333333333334]
+rec: [0.7142857142857143, 0.0, 0.0, 0.6578947368421053]
+f1: [0.819672131147541, 0.0, 0.0, 0.7352941176470588]
+
+cumulative reward: 39817.575000	 average reward: 49.157500
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 29	 tagged_rqs: 30
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 29	 tagged_act: 35
+acc: 0.985185	 rec: 0.763158	 pre: 0.828571	 f1: 0.794521
+pre: [0.9666666666666667, 0.0, 0.0, 0.8285714285714286]
+rec: [0.8285714285714286, 0.0, 0.0, 0.7631578947368421]
+f1: [0.8923076923076922, 0.0, 0.0, 0.7945205479452055]
+
+cumulative reward: 40919.050000	 average reward: 50.517346
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 32
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 31	 tagged_act: 37
+acc: 0.987654	 rec: 0.815789	 pre: 0.837838	 f1: 0.826667
+pre: [0.96875, 0.0, 0.0, 0.8378378378378378]
+rec: [0.8857142857142857, 0.0, 0.0, 0.8157894736842105]
+f1: [0.9253731343283582, 0.0, 0.0, 0.8266666666666665]
+
+cumulative reward: 41321.000000	 average reward: 51.013580
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 35	 tagged_act: 41
+acc: 0.990123	 rec: 0.921053	 pre: 0.853659	 f1: 0.886076
+pre: [0.8918918918918919, 0.0, 0.5, 0.8536585365853658]
+rec: [0.9428571428571428, 0.0, 0.6666666666666666, 0.9210526315789473]
+f1: [0.9166666666666667, 0.0, 0.5714285714285715, 0.8860759493670887]
+
+cumulative reward: 41324.025000	 average reward: 51.017315
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 36	 tagged_act: 38
+acc: 0.995062	 rec: 0.947368	 pre: 0.947368	 f1: 0.947368
+pre: [0.9428571428571428, 0.0, 1.0, 0.9473684210526315]
+rec: [0.9428571428571428, 0.0, 1.0, 0.9473684210526315]
+f1: [0.9428571428571428, 0.0, 1.0, 0.9473684210526315]
+
+cumulative reward: 41522.525000	 average reward: 51.262377
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 38
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 33	 tagged_act: 43
+acc: 0.985185	 rec: 0.868421	 pre: 0.767442	 f1: 0.814815
+pre: [0.868421052631579, 0.0, 0.0, 0.7674418604651163]
+rec: [0.9428571428571428, 0.0, 0.0, 0.868421052631579]
+f1: [0.904109589041096, 0.0, 0.0, 0.8148148148148148]
+
+cumulative reward: 41224.850000	 average reward: 50.894877
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 38
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 42
+acc: 0.986420	 rec: 0.894737	 pre: 0.809524	 f1: 0.850000
+pre: [0.8421052631578947, 0.0, 0.5, 0.8095238095238095]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.8767123287671234, 0.0, 0.5714285714285715, 0.8500000000000001]
+
+cumulative reward: 41023.625000	 average reward: 50.646451
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 43
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 47
+acc: 0.980247	 rec: 0.894737	 pre: 0.723404	 f1: 0.800000
+pre: [0.7441860465116279, 0.0, 0.5, 0.723404255319149]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.8205128205128205, 0.0, 0.5714285714285715, 0.8]
+
+cumulative reward: 40424.250000	 average reward: 49.906481
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 37
+acc: 0.991358	 rec: 0.894737	 pre: 0.918919	 f1: 0.906667
+pre: [0.9117647058823529, 0.0, 1.0, 0.918918918918919]
+rec: [0.8857142857142857, 0.0, 1.0, 0.8947368421052632]
+f1: [0.8985507246376812, 0.0, 1.0, 0.9066666666666667]
+
+cumulative reward: 41122.300000	 average reward: 50.768272
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 29	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 31	 tagged_act: 38
+acc: 0.983951	 rec: 0.815789	 pre: 0.815789	 f1: 0.815789
+pre: [0.8529411764705882, 0.0, 0.5, 0.8157894736842105]
+rec: [0.8285714285714286, 0.0, 0.6666666666666666, 0.8157894736842105]
+f1: [0.8405797101449276, 0.0, 0.5714285714285715, 0.8157894736842104]
+
+cumulative reward: 40522.475000	 average reward: 50.027747
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 36
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 33	 tagged_act: 40
+acc: 0.986420	 rec: 0.868421	 pre: 0.825000	 f1: 0.846154
+pre: [0.8611111111111112, 0.0, 0.5, 0.825]
+rec: [0.8857142857142857, 0.0, 0.6666666666666666, 0.868421052631579]
+f1: [0.8732394366197184, 0.0, 0.5714285714285715, 0.8461538461538461]
+
+cumulative reward: 40923.000000	 average reward: 50.522222
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 32	 tagged_act: 39
+acc: 0.985185	 rec: 0.842105	 pre: 0.820513	 f1: 0.831169
+pre: [0.8571428571428571, 0.0, 0.5, 0.8205128205128205]
+rec: [0.8571428571428571, 0.0, 0.6666666666666666, 0.8421052631578947]
+f1: [0.8571428571428571, 0.0, 0.5714285714285715, 0.8311688311688312]
+
+cumulative reward: 40722.725000	 average reward: 50.274969
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 31
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 33	 tagged_act: 34
+acc: 0.992593	 rec: 0.868421	 pre: 0.970588	 f1: 0.916667
+pre: [0.967741935483871, 0.0, 1.0, 0.9705882352941176]
+rec: [0.8571428571428571, 0.0, 1.0, 0.868421052631579]
+f1: [0.909090909090909, 0.0, 1.0, 0.9166666666666667]
+
+cumulative reward: 41120.300000	 average reward: 50.765802
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 40
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 33	 tagged_act: 45
+acc: 0.982716	 rec: 0.868421	 pre: 0.733333	 f1: 0.795181
+pre: [0.825, 0.0, 0.0, 0.7333333333333333]
+rec: [0.9428571428571428, 0.0, 0.0, 0.868421052631579]
+f1: [0.88, 0.0, 0.0, 0.7951807228915663]
+
+cumulative reward: 41026.025000	 average reward: 50.649414
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 29	 tagged_rqs: 30
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 2
+total_act: 38	 right_act: 31	 tagged_act: 32
+acc: 0.990123	 rec: 0.815789	 pre: 0.968750	 f1: 0.885714
+pre: [0.9666666666666667, 0.0, 1.0, 0.96875]
+rec: [0.8285714285714286, 0.0, 0.6666666666666666, 0.8157894736842105]
+f1: [0.8923076923076922, 0.0, 0.8, 0.8857142857142857]
+
+cumulative reward: 40618.800000	 average reward: 50.146667
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 33	 tagged_act: 37
+acc: 0.990123	 rec: 0.868421	 pre: 0.891892	 f1: 0.880000
+pre: [0.9393939393939394, 0.0, 0.5, 0.8918918918918919]
+rec: [0.8857142857142857, 0.0, 0.6666666666666666, 0.868421052631579]
+f1: [0.9117647058823529, 0.0, 0.5714285714285715, 0.88]
+
+cumulative reward: 41121.550000	 average reward: 50.767346
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 33	 tagged_act: 41
+acc: 0.985185	 rec: 0.868421	 pre: 0.804878	 f1: 0.835443
+pre: [0.8378378378378378, 0.0, 0.5, 0.8048780487804879]
+rec: [0.8857142857142857, 0.0, 0.6666666666666666, 0.868421052631579]
+f1: [0.8611111111111112, 0.0, 0.5714285714285715, 0.8354430379746836]
+
+cumulative reward: 40820.375000	 average reward: 50.395525
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 39
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 42
+acc: 0.985185	 rec: 0.894737	 pre: 0.809524	 f1: 0.850000
+pre: [0.7948717948717948, 0.0, 1.0, 0.8095238095238095]
+rec: [0.8857142857142857, 0.0, 1.0, 0.8947368421052632]
+f1: [0.8378378378378378, 0.0, 1.0, 0.8500000000000001]
+
+cumulative reward: 40621.975000	 average reward: 50.150586
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 43
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 47
+acc: 0.980247	 rec: 0.894737	 pre: 0.723404	 f1: 0.800000
+pre: [0.7441860465116279, 0.0, 0.5, 0.723404255319149]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.8205128205128205, 0.0, 0.5714285714285715, 0.8]
+
+cumulative reward: 40524.175000	 average reward: 50.029846
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 27	 tagged_rqs: 30
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 29	 tagged_act: 34
+acc: 0.983951	 rec: 0.763158	 pre: 0.852941	 f1: 0.805556
+pre: [0.9, 0.0, 0.5, 0.8529411764705882]
+rec: [0.7714285714285715, 0.0, 0.6666666666666666, 0.7631578947368421]
+f1: [0.8307692307692307, 0.0, 0.5714285714285715, 0.8055555555555555]
+
+cumulative reward: 40319.575000	 average reward: 49.777253
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 32	 tagged_act: 37
+acc: 0.987654	 rec: 0.842105	 pre: 0.864865	 f1: 0.853333
+pre: [0.9090909090909091, 0.0, 0.5, 0.8648648648648649]
+rec: [0.8571428571428571, 0.0, 0.6666666666666666, 0.8421052631578947]
+f1: [0.8823529411764706, 0.0, 0.5714285714285715, 0.8533333333333334]
+
+cumulative reward: 40922.150000	 average reward: 50.521173
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 38
+acc: 0.991358	 rec: 0.894737	 pre: 0.894737	 f1: 0.894737
+pre: [0.9411764705882353, 0.0, 0.5, 0.8947368421052632]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.9275362318840579, 0.0, 0.5714285714285715, 0.8947368421052632]
+
+cumulative reward: 41421.075000	 average reward: 51.137130
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 29	 tagged_rqs: 32
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 29	 tagged_act: 37
+acc: 0.982716	 rec: 0.763158	 pre: 0.783784	 f1: 0.773333
+pre: [0.90625, 0.0, 0.0, 0.7837837837837838]
+rec: [0.8285714285714286, 0.0, 0.0, 0.7631578947368421]
+f1: [0.8656716417910447, 0.0, 0.0, 0.7733333333333334]
+
+cumulative reward: 40720.175000	 average reward: 50.271821
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 1	 tagged_ecs: 4
+total_act: 38	 right_act: 32	 tagged_act: 37
+acc: 0.988889	 rec: 0.842105	 pre: 0.864865	 f1: 0.853333
+pre: [0.9393939393939394, 0.0, 0.25, 0.8648648648648649]
+rec: [0.8857142857142857, 0.0, 0.3333333333333333, 0.8421052631578947]
+f1: [0.9117647058823529, 0.0, 0.28571428571428575, 0.8533333333333334]
+
+cumulative reward: 41221.425000	 average reward: 50.890648
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 33	 tagged_act: 37
+acc: 0.988889	 rec: 0.868421	 pre: 0.891892	 f1: 0.880000
+pre: [0.8823529411764706, 0.0, 1.0, 0.8918918918918919]
+rec: [0.8571428571428571, 0.0, 1.0, 0.868421052631579]
+f1: [0.8695652173913043, 0.0, 1.0, 0.88]
+
+cumulative reward: 40821.675000	 average reward: 50.397130
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 36
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 30	 tagged_act: 41
+acc: 0.980247	 rec: 0.789474	 pre: 0.731707	 f1: 0.759494
+pre: [0.8333333333333334, 0.0, 0.0, 0.7317073170731707]
+rec: [0.8571428571428571, 0.0, 0.0, 0.7894736842105263]
+f1: [0.8450704225352113, 0.0, 0.0, 0.7594936708860759]
+
+cumulative reward: 40621.850000	 average reward: 50.150432
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 43
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 32	 tagged_act: 48
+acc: 0.976543	 rec: 0.842105	 pre: 0.666667	 f1: 0.744186
+pre: [0.7441860465116279, 0.0, 0.0, 0.6666666666666666]
+rec: [0.9142857142857143, 0.0, 0.0, 0.8421052631578947]
+f1: [0.8205128205128205, 0.0, 0.0, 0.744186046511628]
+
+cumulative reward: 40424.175000	 average reward: 49.906389
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 30	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 32	 tagged_act: 38
+acc: 0.986420	 rec: 0.842105	 pre: 0.842105	 f1: 0.842105
+pre: [0.8823529411764706, 0.0, 0.5, 0.8421052631578947]
+rec: [0.8571428571428571, 0.0, 0.6666666666666666, 0.8421052631578947]
+f1: [0.8695652173913043, 0.0, 0.5714285714285715, 0.8421052631578947]
+
+cumulative reward: 40822.800000	 average reward: 50.398519
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 2
+total_act: 38	 right_act: 33	 tagged_act: 37
+acc: 0.988889	 rec: 0.868421	 pre: 0.891892	 f1: 0.880000
+pre: [0.8857142857142857, 0.0, 1.0, 0.8918918918918919]
+rec: [0.8857142857142857, 0.0, 0.6666666666666666, 0.868421052631579]
+f1: [0.8857142857142857, 0.0, 0.8, 0.88]
+
+cumulative reward: 40720.600000	 average reward: 50.272346
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 1	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 37
+acc: 0.992593	 rec: 0.894737	 pre: 0.918919	 f1: 0.906667
+pre: [0.9705882352941176, 0.0, 0.3333333333333333, 0.918918918918919]
+rec: [0.9428571428571428, 0.0, 0.3333333333333333, 0.8947368421052632]
+f1: [0.9565217391304348, 0.0, 0.3333333333333333, 0.9066666666666667]
+
+cumulative reward: 41420.425000	 average reward: 51.136327
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 35	 tagged_act: 37
+acc: 0.993827	 rec: 0.921053	 pre: 0.945946	 f1: 0.933333
+pre: [0.9411764705882353, 0.0, 1.0, 0.9459459459459459]
+rec: [0.9142857142857143, 0.0, 1.0, 0.9210526315789473]
+f1: [0.9275362318840579, 0.0, 1.0, 0.9333333333333332]
+
+cumulative reward: 41420.375000	 average reward: 51.136265
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 34	 tagged_act: 42
+acc: 0.988889	 rec: 0.894737	 pre: 0.809524	 f1: 0.850000
+pre: [0.918918918918919, 0.0, 0.0, 0.8095238095238095]
+rec: [0.9714285714285714, 0.0, 0.0, 0.8947368421052632]
+f1: [0.9444444444444445, 0.0, 0.0, 0.8500000000000001]
+
+cumulative reward: 41722.850000	 average reward: 51.509691
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 36	 tagged_act: 40
+acc: 0.992593	 rec: 0.947368	 pre: 0.900000	 f1: 0.923077
+pre: [0.8918918918918919, 0.0, 1.0, 0.9]
+rec: [0.9428571428571428, 0.0, 1.0, 0.9473684210526315]
+f1: [0.9166666666666667, 0.0, 1.0, 0.9230769230769231]
+
+cumulative reward: 41423.400000	 average reward: 51.140000
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 36	 tagged_act: 39
+acc: 0.995062	 rec: 0.947368	 pre: 0.923077	 f1: 0.935065
+pre: [0.9714285714285714, 0.0, 0.5, 0.9230769230769231]
+rec: [0.9714285714285714, 0.0, 0.6666666666666666, 0.9473684210526315]
+f1: [0.9714285714285714, 0.0, 0.5714285714285715, 0.935064935064935]
+
+cumulative reward: 41921.300000	 average reward: 51.754691
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 32
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 36
+acc: 0.993827	 rec: 0.894737	 pre: 0.944444	 f1: 0.918919
+pre: [1.0, 0.0, 0.5, 0.9444444444444444]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.955223880597015, 0.0, 0.5714285714285715, 0.918918918918919]
+
+cumulative reward: 41420.925000	 average reward: 51.136944
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 42
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 32	 tagged_act: 47
+acc: 0.977778	 rec: 0.842105	 pre: 0.680851	 f1: 0.752941
+pre: [0.7619047619047619, 0.0, 0.0, 0.6808510638297872]
+rec: [0.9142857142857143, 0.0, 0.0, 0.8421052631578947]
+f1: [0.8311688311688312, 0.0, 0.0, 0.7529411764705882]
+
+cumulative reward: 40623.500000	 average reward: 50.152469
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 51
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 36	 tagged_act: 55
+acc: 0.975309	 rec: 0.947368	 pre: 0.654545	 f1: 0.774194
+pre: [0.6666666666666666, 0.0, 0.5, 0.6545454545454545]
+rec: [0.9714285714285714, 0.0, 0.6666666666666666, 0.9473684210526315]
+f1: [0.7906976744186046, 0.0, 0.5714285714285715, 0.7741935483870966]
+
+cumulative reward: 40328.175000	 average reward: 49.787870
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 44
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 32	 tagged_act: 49
+acc: 0.975309	 rec: 0.842105	 pre: 0.653061	 f1: 0.735632
+pre: [0.7272727272727273, 0.0, 0.0, 0.6530612244897959]
+rec: [0.9142857142857143, 0.0, 0.0, 0.8421052631578947]
+f1: [0.810126582278481, 0.0, 0.0, 0.735632183908046]
+
+cumulative reward: 40424.225000	 average reward: 49.906451
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 32
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 36
+acc: 0.993827	 rec: 0.894737	 pre: 0.944444	 f1: 0.918919
+pre: [1.0, 0.0, 0.5, 0.9444444444444444]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.955223880597015, 0.0, 0.5714285714285715, 0.918918918918919]
+
+cumulative reward: 41620.475000	 average reward: 51.383302
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 39
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 36	 tagged_act: 42
+acc: 0.990123	 rec: 0.947368	 pre: 0.857143	 f1: 0.900000
+pre: [0.8461538461538461, 0.0, 1.0, 0.8571428571428571]
+rec: [0.9428571428571428, 0.0, 1.0, 0.9473684210526315]
+f1: [0.8918918918918919, 0.0, 1.0, 0.9]
+
+cumulative reward: 41222.225000	 average reward: 50.891636
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 39
+acc: 0.990123	 rec: 0.894737	 pre: 0.871795	 f1: 0.883117
+pre: [0.9142857142857143, 0.0, 0.5, 0.8717948717948718]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.9142857142857143, 0.0, 0.5714285714285715, 0.8831168831168831]
+
+cumulative reward: 41321.150000	 average reward: 51.013765
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 34
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 37	 tagged_act: 37
+acc: 0.998765	 rec: 0.973684	 pre: 1.000000	 f1: 0.986667
+pre: [1.0, 0.0, 1.0, 1.0]
+rec: [0.9714285714285714, 0.0, 1.0, 0.9736842105263158]
+f1: [0.9855072463768115, 0.0, 1.0, 0.9866666666666666]
+
+cumulative reward: 42020.775000	 average reward: 51.877500
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 35	 tagged_act: 39
+acc: 0.992593	 rec: 0.921053	 pre: 0.897436	 f1: 0.909091
+pre: [0.9428571428571428, 0.0, 0.5, 0.8974358974358975]
+rec: [0.9428571428571428, 0.0, 0.6666666666666666, 0.9210526315789473]
+f1: [0.9428571428571428, 0.0, 0.5714285714285715, 0.9090909090909091]
+
+cumulative reward: 41621.925000	 average reward: 51.385093
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 35	 tagged_act: 36
+acc: 0.995062	 rec: 0.921053	 pre: 0.972222	 f1: 0.945946
+pre: [0.9696969696969697, 0.0, 1.0, 0.9722222222222222]
+rec: [0.9142857142857143, 0.0, 1.0, 0.9210526315789473]
+f1: [0.9411764705882354, 0.0, 1.0, 0.9459459459459458]
+
+cumulative reward: 41520.800000	 average reward: 51.260247
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 38
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 35	 tagged_act: 42
+acc: 0.988889	 rec: 0.921053	 pre: 0.833333	 f1: 0.875000
+pre: [0.868421052631579, 0.0, 0.5, 0.8333333333333334]
+rec: [0.9428571428571428, 0.0, 0.6666666666666666, 0.9210526315789473]
+f1: [0.904109589041096, 0.0, 0.5714285714285715, 0.875]
+
+cumulative reward: 41322.375000	 average reward: 51.015278
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 41
+acc: 0.987654	 rec: 0.894737	 pre: 0.829268	 f1: 0.860759
+pre: [0.8648648648648649, 0.0, 0.5, 0.8292682926829268]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.888888888888889, 0.0, 0.5714285714285715, 0.860759493670886]
+
+cumulative reward: 41121.550000	 average reward: 50.767346
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 37
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 40
+acc: 0.987654	 rec: 0.894737	 pre: 0.850000	 f1: 0.871795
+pre: [0.8378378378378378, 0.0, 1.0, 0.85]
+rec: [0.8857142857142857, 0.0, 1.0, 0.8947368421052632]
+f1: [0.8611111111111112, 0.0, 1.0, 0.8717948717948718]
+
+cumulative reward: 40823.250000	 average reward: 50.399074
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 43
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 47
+acc: 0.980247	 rec: 0.894737	 pre: 0.723404	 f1: 0.800000
+pre: [0.7441860465116279, 0.0, 0.5, 0.723404255319149]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.8205128205128205, 0.0, 0.5714285714285715, 0.8]
+
+cumulative reward: 40524.575000	 average reward: 50.030340
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 36
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 39
+acc: 0.988889	 rec: 0.894737	 pre: 0.871795	 f1: 0.883117
+pre: [0.8611111111111112, 0.0, 1.0, 0.8717948717948718]
+rec: [0.8857142857142857, 0.0, 1.0, 0.8947368421052632]
+f1: [0.8732394366197184, 0.0, 1.0, 0.8831168831168831]
+
+cumulative reward: 40921.525000	 average reward: 50.520401
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 39
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 35	 tagged_act: 42
+acc: 0.987654	 rec: 0.921053	 pre: 0.833333	 f1: 0.875000
+pre: [0.8205128205128205, 0.0, 1.0, 0.8333333333333334]
+rec: [0.9142857142857143, 0.0, 1.0, 0.9210526315789473]
+f1: [0.8648648648648648, 0.0, 1.0, 0.875]
+
+cumulative reward: 40922.700000	 average reward: 50.521852
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 31	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 34	 tagged_act: 36
+acc: 0.992593	 rec: 0.894737	 pre: 0.944444	 f1: 0.918919
+pre: [0.9393939393939394, 0.0, 1.0, 0.9444444444444444]
+rec: [0.8857142857142857, 0.0, 1.0, 0.8947368421052632]
+f1: [0.9117647058823529, 0.0, 1.0, 0.918918918918919]
+
+cumulative reward: 41220.575000	 average reward: 50.889599
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 33
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 34	 tagged_act: 37
+acc: 0.992593	 rec: 0.894737	 pre: 0.918919	 f1: 0.906667
+pre: [0.9696969696969697, 0.0, 0.5, 0.918918918918919]
+rec: [0.9142857142857143, 0.0, 0.6666666666666666, 0.8947368421052632]
+f1: [0.9411764705882354, 0.0, 0.5714285714285715, 0.9066666666666667]
+
+cumulative reward: 41520.025000	 average reward: 51.259290
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 36
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 35	 tagged_act: 40
+acc: 0.991358	 rec: 0.921053	 pre: 0.875000	 f1: 0.897436
+pre: [0.9166666666666666, 0.0, 0.5, 0.875]
+rec: [0.9428571428571428, 0.0, 0.6666666666666666, 0.9210526315789473]
+f1: [0.9295774647887323, 0.0, 0.5714285714285715, 0.8974358974358975]
+
+cumulative reward: 41521.175000	 average reward: 51.260710
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 33	 tagged_rqs: 35
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 35	 tagged_act: 39
+acc: 0.992593	 rec: 0.921053	 pre: 0.897436	 f1: 0.909091
+pre: [0.9428571428571428, 0.0, 0.5, 0.8974358974358975]
+rec: [0.9428571428571428, 0.0, 0.6666666666666666, 0.9210526315789473]
+f1: [0.9428571428571428, 0.0, 0.5714285714285715, 0.9090909090909091]
+
+cumulative reward: 41621.925000	 average reward: 51.385093
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 39
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 36	 tagged_act: 43
+acc: 0.990123	 rec: 0.947368	 pre: 0.837209	 f1: 0.888889
+pre: [0.8717948717948718, 0.0, 0.5, 0.8372093023255814]
+rec: [0.9714285714285714, 0.0, 0.6666666666666666, 0.9473684210526315]
+f1: [0.9189189189189189, 0.0, 0.5714285714285715, 0.8888888888888888]
+
+cumulative reward: 41424.750000	 average reward: 51.141667
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 47
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 2	 tagged_ecs: 4
+total_act: 38	 right_act: 36	 tagged_act: 51
+acc: 0.980247	 rec: 0.947368	 pre: 0.705882	 f1: 0.808989
+pre: [0.723404255319149, 0.0, 0.5, 0.7058823529411765]
+rec: [0.9714285714285714, 0.0, 0.6666666666666666, 0.9473684210526315]
+f1: [0.8292682926829269, 0.0, 0.5714285714285715, 0.8089887640449439]
+
+cumulative reward: 40628.175000	 average reward: 50.158241
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 34	 tagged_rqs: 44
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 3	 tagged_ecs: 3
+total_act: 38	 right_act: 37	 tagged_act: 47
+acc: 0.986420	 rec: 0.973684	 pre: 0.787234	 f1: 0.870588
+pre: [0.7727272727272727, 0.0, 1.0, 0.7872340425531915]
+rec: [0.9714285714285714, 0.0, 1.0, 0.9736842105263158]
+f1: [0.8607594936708862, 0.0, 1.0, 0.8705882352941177]
+
+cumulative reward: 41025.400000	 average reward: 50.648642
+
+
+predict_net=both summary:
+total_rqs: 35	 right_rqs: 32	 tagged_rqs: 42
+total_ops: 0	 right_ops: 0	 tagged_ops: 0
+total_ecs: 3	 right_ecs: 0	 tagged_ecs: 5
+total_act: 38	 right_act: 32	 tagged_act: 47
+acc: 0.977778	 rec: 0.842105	 pre: 0.680851	 f1: 0.752941
+pre: [0.7619047619047619, 0.0, 0.0, 0.6808510638297872]
+rec: [0.9142857142857143, 0.0, 0.0, 0.8421052631578947]
+f1: [0.8311688311688312, 0.0, 0.0, 0.7529411764705882]
+
+cumulative reward: 40624.875000	 average reward: 50.154167
+
+
+NetName: alpha	 Best f1 value: 0.0	 Best epoch: 0
+
+
+NetName: beta	 Best f1 value: 0.0	 Best epoch: 0
+
+
+NetName: both	 Best f1 value: 0.986666666667	 Best epoch: 44
+
+NetName: alpha
+pre: [0.0, 0.0]
+rec: [0.0, 0.0]
+rw: [0.0, 0.0]
+f1: [0.0, 0.0]
+
+Avg f1: 0.0  Avg reward: 0.0
+
+NetName: beta
+pre: [0.0, 0.0]
+rec: [0.0, 0.0]
+rw: [0.0, 0.0]
+f1: [0.0, 0.0]
+
+Avg f1: 0.0  Avg reward: 0.0
+
+NetName: both
+pre: [0.8846153846153846, 1.0]
+rec: [0.868421052631579, 0.9736842105263158]
+rw: [49.53845919610239, 51.87750000000018]
+f1: [0.8533333333333334, 0.9866666666666666]
+
+Avg f1: 0.92  Avg reward: 50.7079795981
+
+Total time cost of fold 1 is: 21911s
