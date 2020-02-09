@@ -1,0 +1,18 @@
+Adapt a mouse to click with your foot.
+Obtain a second USB mouse.  
+Use one for moving the cursor. 
+The other for clicking is on the floor to be foot-operated.
+Cut 2 short pieces of plastic tubing, such as 1.9 cm plastic conduit. 
+Drill a hole in one side: 0.6 cm or a little larger. 
+Insert a small bit in the drill and drill a small hole on the side opposite the large hole. 
+Repeat for each of the two pieces. 
+Drill a small pilot hole in each of the two mouse buttons. 
+Put a bit of glue on the piece of tubing around the small hole.
+Insert a screw through the hole from inside the tubing. 
+Using the large hole for screwdriver access, screw the piece of tubing onto a mouse button. 
+Repeat for each of the two buttons. 
+For best ease of use, take a piece of Styrofoam insulation board and cut it to around a 1 foot square. 
+Cut a notch in one edge to fit the mouse.
+Optionally, put foam weatherstripping on top of the tubing to pad it.  
+Duct tape can help hold it in place.
+It may be easier to click the mouse without the padding, so only use it if you need it. 

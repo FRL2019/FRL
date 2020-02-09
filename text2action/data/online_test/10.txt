@@ -1,0 +1,45 @@
+on the action menu click restore basic disk configuration 
+right-click my network places and then click properties 
+in the network and dial-up connections window on the advanced menu click optional networking components 
+in the windows optional networking components wizard click to select the networking services check box and then click details 
+in the networking services dialog box click to select the RIP listener check box click ok and then click next 
+insert the operating system installation disc when you are prompted click ok and dns is reinstalled 
+click start click settings and then click control panel 
+double-click phone and modem options 
+click the modems tab 
+in the the following modems are installed list click the modem that you want to remove and then click remove 
+click yes in response to the are you sure you want to remove the selected modems from your system message 
+click start point to settings and click control panel 
+double-click the administrative tools icon 
+double-click the computer management icon 
+expand services and applications 
+click on services 
+double-click the indexing service you wish to enable and set its startup to automatic or manual 
+right-click my network places and then click properties 
+right-click the local area connection icon and then click properties 
+click install click client and then click add 
+in the network client box click client for microsoft networks and then click ok 
+in the local area connections properties window click ok 
+right-click my network places and then click properties 
+right-click the network adapter that is connected to the network that the computers running windows 95/windows 98 are using usually local area connection and then click properties 
+click internet protocol tcp/ip and then click properties 
+click the advanced button 
+on the wins tab click enable netbios over tcp/ip and then click ok 
+click ok and then click ok 
+click start and then click run 
+in the open box type dcomcnfg and then click ok 
+in the distributed com configuration properties dialog box click the default properties tab 
+click to select the enable distributed com on this computer check box 
+under default authentication level click connect 
+under default impersonation level click identify 
+click the applications tab click {000c101c-0000-0000-c000-000000000046} and then click properties 
+click the general tab and then click default in the authentication level box 
+click the security tab and then click use default access permissions use default launch permissions and use default configuration permissions 
+click apply and then click ok 
+click internet options on the tools menu and then click the security tab 
+click internet in the select a web content zone to specify its security settings section and then click custom level 
+in the run activex scripts and plugins section click disable and then click ok 
+click start on the taskbar and then click run 
+type the following in the open box tlntsvr /service 
+start the telnet server service by clicking ok 
+click start point to search and then click for files and folders 

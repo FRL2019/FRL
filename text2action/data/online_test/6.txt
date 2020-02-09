@@ -1,0 +1,59 @@
+on the privacy tab click advanced 
+click to select the override automatic cookie handling check box 
+click prompt for both first-party cookies and third-party cookies 
+click ok twice 
+in control panel double-click display 
+click none and then click ok 
+open control panel and then click power options 
+click the power schemes tab 
+under power schemes click always on 
+double-click my computer 
+on the tools menu click folder options 
+click the offline files tab 
+click to select the enable offline files check box click apply and then click ok 
+click start point to settings and then click control panel 
+double-click system 
+on the network identification tab click Network ID 
+in the network identification wizard click next 
+click this computer is for home use and not part of a business network and click next 
+click users must enter a user name and password 
+click next and then click finish 
+click start and then click control panel or point to settings and then click control panel 
+double-click administrative tools 
+double-click services 
+double-click messenger 
+in the startup type list click disabled 
+click stop and then click ok 
+on the tools menu click folder options 
+on the view tab click to clear the hide protected operating system files check box 
+double-click my computer on the desktop 
+on the tools menu click folder options 
+on the offline files tab click view files 
+on the tools menu click synchronize 
+click synchronize when you are prompted to synchronize 
+click start point to programs point to administrative tools and then click services 
+right-click the print spooler service and then click start 
+click start point to settings click control panel and then double-click administrative tools 
+double-click component services click to select services local right-click print spooler and then click properties 
+click start and then click ok 
+start the magnifier tool 
+click to check the follow mouse cursor check box and then minimize the magnifier tool 
+click start point to settings and then click control panel 
+double-click network and dial-up connections 
+click local area connection and then click properties on the file menu 
+click install click service and then click add 
+click file and printer sharing for microsoft networks and then click ok 
+click start point to settings and then click control panel 
+double-click sounds and multimedia 
+on the audio tab click advanced under sound playback 
+in the speaker setup box click the surround sound speakers you want to use and then click ok 
+click ok and then close control panel 
+click start point to settings and then click control panel 
+double-click administrative tools then double-click event viewer 
+click to expand event viewer if it is not already expanded 
+click application 
+right-click my computer and then click manage 
+double-click system tools in the right pane and then double-click device manager 
+double-click ide ata/atapi controller in the right pane and then double-click the secondary IDE channel 
+on the advanced settings tab click pio only in the transfer mode box 
+click ok close the computer management window and then reboot the computer 

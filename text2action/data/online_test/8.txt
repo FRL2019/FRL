@@ -1,0 +1,47 @@
+in the advanced settings area under the hidden files and folders select show hidden files and folders and then click ok 
+in the left pane of windows explorer expand my computer 
+click local drive c: 
+in the right pane find and select autoexec right-click this file 
+click properties from the pop-up menu 
+on the general tab clear the hidden attribute and then click ok 
+on the desktop right-click my network places and then click properties 
+right-click local area connection and then click properties 
+in the components checked are used by this connection list double-click internet protocol tcp/ip click advanced and then click the wins tab 
+click use netbios setting from the dhcp server and then click ok three times 
+double-click my computer 
+on the tools menu click folder options 
+click the offline files tab and then click to select the enable offline files check box you can either enable or disable the check box for client-side caching 
+right-click my computer and then click manage 
+under system tools double-click local users and groups to expand it and then click users 
+in the right pane right-click the guest account and then click properties 
+click to clear the account is disabled check box and make sure the password is set to null blank click ok 
+click start point to settings and then click taskbar & start menu 
+click to set the show clock check box and then click ok 
+click start point to search and then click files or folders 
+in the files or folders named box type riched20.dll and then click search now 
+in the search results list right-click riched20.dll 
+click start point to settings and then click control panel 
+double-click system 
+click the advanced tab and then click settings under startup and recovery 
+in the write debugging information list click small memory dump 64k 
+click start point to programs point to administrative tools and performance and then click performance logs and alerts 
+right-click my computer and then click manage 
+open services and applications 
+click services 
+right-click performance logs and alerts then click properties 
+click the log on tab and then click this account 
+click start point to settings and then click control panel 
+click administrative tools 
+double-click services 
+right-click fax service and then click properties 
+click the log on tab 
+click this account 
+in control panel double-click system click hardware and then click device manager 
+expand ide ata/atapi controllers right-click pci bus master ide controller and then click properties 
+click driver and then click update driver 
+click next click display a list of known drivers for this device so that i can choose a specific driver and then click next 
+click show all hardware for this device class click standard ide ata/atapi controllers in the manufacturers list and then click standard ide/ESDI hard disk controllers in the models list 
+click start point to programs 
+click administrative tools and then click computer management 
+click system tools and then click device manager 
+expand ide ata/atapi controllers 

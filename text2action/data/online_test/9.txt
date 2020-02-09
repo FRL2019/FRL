@@ -1,0 +1,50 @@
+double-click the secondary ide channel for which you want to configure dma/pio settings 
+click the advanced settings tab 
+in the transfer mode box click either pio only or dma if available 
+right-click my computer on the desktop and then click properties 
+on the advanced tab click startup and recovery 
+change the value in the system startup to 10 seconds 
+click ok and then click ok 
+click start right-click my computer and then click manage 
+in the console pane click device manager 
+on the view menu click show hidden devices 
+in the details pane expand network adapters 
+right-click direct parallel and then click disable 
+click start point to settings and then click control panel 
+double-click power options 
+click the power schemes tab 
+click start point to settings and then click control panel 
+double-click phone and modem options 
+click the modems tab 
+click your modem and then click properties 
+click the diagnostics tab 
+click query modem 
+click start point to settings click control panel and then double-click regional options 
+on the general tab click to select the cyrillic check box under language settings for the system and then click ok 
+you are then prompted to copy files click ok 
+in the printers folder click server properties on the file menu 
+click the ports tab click the com2 port you want to remove click delete port and then click yes 
+click start point to settings click control panel and then double-click system 
+click the hardware tab and then click device manager 
+double-click the modems branch to expand it right-click 56000 bps v90 modem click properties and then click the modem tab 
+change the maximum port speed to 115200 and then click ok 
+in control panel double-click phone and modem options 
+click modems and then click add 
+click to select the don't detect my modem; i will select it from a list check box and then click next 
+in the manufacturers list click boca research 
+in the models list click boca 33.6 kbps internal fd34fsvd and then click next 
+click the com port where you want to install the modem and then click next 
+click finish 
+click start and then click run 
+in the open box type regsvr32 /u inseng.dll and then click ok 
+when you receive the message that states that dllunregisterserver in inseng.dll succeeded click ok 
+click start and then click run 
+in the open box type regsvr32 inseng.dll and then click ok 
+when you receive the message that states that dllregisterserver in inseng.dll succeeded click ok 
+click start point to settings point to control panel and then click display 
+click the settings tab 
+click the advanced button 
+click the adapter tab 
+When you click the list all modes button a list of what functionality is inlcuded with this video card is displayed 
+click start point to settings click control panel double-click administrative tools and then double-click computer management 
+if it is not already expanded expand the storage branch and then click the disk management folder to open it 

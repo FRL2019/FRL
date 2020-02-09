@@ -1,0 +1,15 @@
+Backup and restore from NAS with AOMEI backupper.
+Backup to NAS with AOMEI Backupper. 
+Run AOMEI Backupper, to backup to NAS, we need to select our NAS device as the destination first.  
+Click the "Step2" as the following picture:
+In the pop-up window, click "Share/NAS Device" from the left-bottom panel. 
+Add our NAS device to AOMEI Backupper.  
+Click "Add share or NAS device" button in the lower-left corner.
+Enter the IP address of your NAS.  
+You can also input a display name for this NAS device.
+Now you can find the destination folder in the right-hand side column.  
+Check it and then click OK at the bottom to start the back-upping process.
+Restore from NAS with AOMEI Backupper. 
+First we need to locate the backup image by clicking on Restore button in the main interface, select the image shown in the list box then click Next. 
+Choose a backup point to restore. 
+Select a destination partition to restore, then click Next to commit. 

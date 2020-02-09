@@ -1,0 +1,44 @@
+click start point to programs point to accessories point to system tools and then click disk defragmenter 
+click the disk that you want to defragment and then click defragment on the action menu 
+click start point to settings click control panel and then double-click system 
+click the hardware tab and then click device manager 
+right-click modems and then click scan for hardware changes 
+click start click run type regedit in the open box and then click ok 
+in registry editor locate and then click the following subkey hkey_local_machine  system  currentcontrolset  services  tcpip  parameters 
+in the right pane right-click enableicmpredirect or enableicmpredirects and then click modify 
+in the edit dword value dialog box type 1 in the value data box and then click ok 
+on the desktop right-click my network places and then click properties 
+right-click the local area connection  and then click properties 
+click internet protocol tcp/ip and click properties 
+click advanced and then click wins 
+if you are using a static internet protocol ip address click enable netbios over tcp/ip 
+click ok in the open dialog boxes to close them and to save the new settings 
+on the start menu click programs point to accessories point to communications and then click network and dial-up connections 
+right-click the dial-up icon and then click properties 
+in the network connection dialog box click the security tab 
+in security options click advanced custom settings and then click settings 
+in the advanced security settings dialog box in logon security click properties under use extensible authentication protocol eap 
+in the smart card or other certificate properties dialog box click to clear the validate server certificate check box and then click ok 
+double-click my computer 
+double-click the local disk c: drive 
+right-click the autoexec file and then click properties 
+click the security tab 
+click to clear the allow inheritable permissions from parent to propagate to this object check box 
+in the security dialog box that appears click remove 
+click add 
+in the look in box click the name of the current computer 
+in the name box click system and then click add 
+click ok 
+click ok 
+in control panel double-click internet options 
+on the connections tab click lan settings 
+in the proxy server area click to select the use a proxy server for your lan these settings will not apply to dial-up or vpn connections check box and then click ok 
+right-click my network places on the desktop and then click properties 
+right-click the icon for the local area connection and then click properties 
+on the networking tab click the internet protocol tcp/ip entry under components checked are used by this connection and then click properties 
+click advanced 
+click the dns tab 
+click to clear the register this connection's address in dns check box 
+click ok 
+from the start menu point to programs point to accessories and then click windows explorer 
+from the tools menu click folder options and go to the view tab 
