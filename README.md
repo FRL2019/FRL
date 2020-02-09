@@ -4,7 +4,9 @@
 
 ## Running
 
-**GridWrold:** All arguments are preset in main.py, so you can start training the FRL model by:
+### GridWrold
+
+All arguments are preset in main.py, so you can start training the FRL model by:
 
 ```bash
 $ python main.py
@@ -32,7 +34,9 @@ $ bash full_train.sh
 
 
 
-**Text2Action (EASDRL):** There are three sub-domains in Text2Action: win2k, wikihow and cooking. For each sub-domain, you need to train both Action-Name Extractor and Action-Argument Extractor.
+## Text2Action (EASDRL)
+
+ There are three sub-domains in Text2Action: win2k, wikihow and cooking. For each sub-domain, you need to train both Action-Name Extractor and Action-Argument Extractor.
 
 All parameters are preset in `main.py`, but you need to change some of them according to the sub-domain and the type of extractor.
 
